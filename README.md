@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Employees Control Panel App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the documentation for Employees Control Panel App
 
-## Available Scripts
+## Getting Start
 
-In the project directory, you can run:
+### 1- Run the server
+To start using the application please Run the backend server on your device.
+Please follow the steps at the [Employes-control-panel-server documentation](https://github.com/Mahmoud-Abdo-599/employees-control-panel-server/blob/master/README.md)
 
-### `npm start`
+### 2- Run the Front-End project
+To run the Front-End project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- clone the server repo:
+```
+git clone https://github.com/Mahmoud-Abdo-599/employees-control-panel
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Install the dependencies:
+```
+npm i
+```
 
-### `npm test`
+- Start the server:
+```
+npm start
+```
+### 3- Login
+Please use those email and password to login:
+```
+Email: admin@admin.com
+Password: 1234
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Technologies used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React 17.0.2**
+- **Antd**
+- **Sass**
+- **React router dom**
+- **Axios**
+- **Moment**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1- React 
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+And mainly we are using Function Components with React Hooks like useState and useEffect Hook.
 
-### `npm run eject`
+### 2- Antd
+React UI library with a set of high-quality React components,
+for more informations check: [Antd](https://ant.design/)
+### 3- Sass 
+Mainly in the App for styling, we are using Sass,
+Sass stands for Syntactically Awesome Stylesheet
+Sass is an extension to CSS
+Sass is a CSS pre-processor
+Sass is completely compatible with all versions of CSS
+Sass reduces repetition of CSS and therefore saves time
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4- React router dom
+I used react router dom to handle routes in our App.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 5- Axios
+Axios is a library that helps us make HTTP requests to external resources.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 6- Moment
+MomentJS is a JavaScript library which helps is parsing, validating, manipulating and displaying date/time in JavaScript in a very easy way.
+## Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+Employees control panel
 
-## Learn More
+ ── src
+    ├── index.js
+    ├── AppRender.js
+    ├── App.js
+    ├── pages
+    |   ├── Home
+    |   ├── History
+    |   └── Login
+    ├── components
+    |   ├── Layout
+    |   ├── Fallbacks
+    |   └── PageNotFound404
+    ├── assets
+    |   ├── images
+    |   └── styles
+    ├── routes
+    |   ├── allRoutes
+    |   └── middleware
+    └── helpers
+        ├── getCurrentDate
+        └── httpRequester
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Description
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Features:
 
-### Code Splitting
+- The user can login using his email address.
+- The user can input Arrive and Exit times.
+- The user can input Lunch break times.
+- The user can view the previous days history logs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 

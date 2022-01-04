@@ -1,0 +1,21 @@
+.header {
+    background-color: white;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+
+    .ant-page-header-heading-sub-title {
+        color: rgb(73, 73, 73) !important;
+
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
+
+.nonAuthLayout {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
