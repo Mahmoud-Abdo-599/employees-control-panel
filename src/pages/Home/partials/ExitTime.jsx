@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import styles from "../styles.module.scss";
-import { TimePicker } from 'antd';
+import { TimePicker, Skeleton } from 'antd';
 import requester from "../../../helpers/httpRequester";
 import moment from 'moment';
 import { ReactComponent as ClockIcon } from "../../../assets/images/clock.svg"
 
 const format = 'HH:mm a';
 
-function ExitTime({ data }) {
+function ExitTime({ data, isLoading }) {
     const [timeValue, setTimeValue] = useState()
 
     useEffect(() => {
@@ -35,7 +35,11 @@ function ExitTime({ data }) {
                 <b className={styles.time__start__title}>Exit Time</b>
             </div>
             <div className={styles.time__end}>
-                <TimePicker value={timeValue && moment(timeValue, format)} onChange={handleTimeChange} format={format} />
+                {!isLoading ? (
+                    <TimePicker value={timeValue && moment(timeValue, format)} onChange={handleTimeChange} format={format} />
+                ) : (
+                    <Skeleton.Input style={{ width: 150 }} active />
+                )}
             </div>
 
         </div>

@@ -1,15 +1,16 @@
-import React, { Fragment, Suspense } from 'react'
-import Header from './Header'
+import React, { Fragment, Suspense } from 'react';
+import Header from './Header';
+import ModulesFallBack from "../Fallbacks/ModulesFallBack";
 
 function Layout({ children }) {
     return (
         <Fragment>
             <Header />
-            <Suspense fallback={null}>
-                <div className='general-container'>
+            <div className='general-container'>
+                <Suspense fallback={<ModulesFallBack />}>
                     {children}
-                </div>
-            </Suspense>
+                </Suspense>
+            </div>
         </Fragment>
     )
 }

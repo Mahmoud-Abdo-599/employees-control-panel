@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import "./styles.scss";
+import AuthModuleFallback from "../Fallbacks/AuthModuleFallback";
 
 function NonAuthLayout({ children }) {
     return (
         <div className="nonAuthLayout">
-            {children}
+            <Suspense fallback={<AuthModuleFallback />}>
+                {children}
+            </Suspense>
         </div>
     )
 }

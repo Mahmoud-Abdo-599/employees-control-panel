@@ -15,11 +15,9 @@ const NonAuthmiddleware = ({ component: Component, layout: Layout }) => (
 
 
 const AuthMiddleware = ({ component: Component, layout: Layout, path }) => {
-
   if (!localStorage.getItem("authUser")) {
     return <Redirect to="/login" />;
   }
-
   return (
     <Route
       path={path}

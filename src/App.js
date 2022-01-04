@@ -6,7 +6,6 @@ import { NonAuthmiddleware, AuthMiddleware } from "./routes/middleware";
 import Layout from "./components/Layout";
 import NonAuthLayout from "./components/Layout/NonAuthLayout";
 
-// import "./assets/scss/theme.scss";
 const PageNotFound = React.lazy(() => import("./components/PageNotFound404"));
 
 

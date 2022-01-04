@@ -14,7 +14,6 @@ function Login() {
         errorMsg && setErrorMsg("")
 
         await requester.get(`/users?email=${values.email}&password=${values.password}`).then(response => {
-            console.log(response, "login response");
             if (response.data?.length > 0) {
                 localStorage.setItem("authUser", JSON.stringify({
                     email: response.data[0].email,

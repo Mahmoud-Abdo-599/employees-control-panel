@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import styles from "../styles.module.scss";
-import { TimePicker } from 'antd';
+import { TimePicker, Skeleton } from 'antd';
 import requester from "../../../helpers/httpRequester";
 import moment from 'moment';
 import { ReactComponent as ClockIcon } from "../../../assets/images/clock.svg"
 
 const format = 'HH:mm a';
 
-function LunchBreakTimes({ data }) {
+function LunchBreakTimes({ data, isLoading }) {
     const [timeValue, setTimeValue] = useState()
 
     useEffect(() => {
@@ -47,7 +47,11 @@ function LunchBreakTimes({ data }) {
                 <b className={styles.time__start__title}>Lunch Break Times</b>
             </div>
             <div className={styles.time__end}>
-                <TimePicker.RangePicker value={timeValue && timeValuesMoment()} onChange={handleTimeChange} format={format} />
+                {!isLoading ? (
+                    <TimePicker.RangePicker value={timeValue && timeValuesMoment()} onChange={handleTimeChange} format={format} />
+                ) : (
+                    <Skeleton.Input style={{ width: 150 }} active />
+                )}
             </div>
 
         </div>

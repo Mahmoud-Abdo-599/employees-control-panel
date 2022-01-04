@@ -16,8 +16,6 @@ function Home() {
     const [employeeData, setEmployeeData] = useState()
     const [isLoading, setIsLoading] = useState(false)
 
-    console.log(employeeData, "employeeData");
-
     const startNewDay = async () => {
         setIsLoading(true)
         await requester.post("/days", {
@@ -34,7 +32,6 @@ function Home() {
     const fetchEmployeeData = async () => {
         setIsLoading(true)
         await requester.get(`/days?day=${getCurrentDate()}`).then((response) => {
-            console.log(response, "response");
             if (response.data?.length > 0) {
                 setEmployeeData(response.data[0])
             } else {
