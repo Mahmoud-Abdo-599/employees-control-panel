@@ -9,11 +9,13 @@ To start using the application please Run the backend server on your device.
 Please follow the steps at the [Employes-control-panel-server documentation](https://github.com/Mahmoud-Abdo-599/employees-control-panel-server/blob/master/README.md)
 
 ### 2- Run the Front-End project
-To run the Front-End project
+You can visit the [deployed Front-End project](https://employees-control-panel.vercel.app/) 
+
+Or run the Front-End project at your device by following the steps:
 
 - clone the server repo:
 ```
-git clone https://github.com/Mahmoud-Abdo-599/employees-control-panel
+git clone https://github.com/Mahmoud-Abdo-599/employees-control-panel.git
 ```
 
 - Install the dependencies:
@@ -26,7 +28,7 @@ npm i
 npm start
 ```
 ### 3- Login
-Please use those email and password to login:
+Please use this email and password to log in:
 ```
 Email: admin@admin.com
 Password: 1234
@@ -46,13 +48,12 @@ Password: 1234
 
 ### 1- React 
 React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
-And mainly we are using Function Components with React Hooks like useState and useEffect Hook.
 
 ### 2- Antd
 React UI library with a set of high-quality React components,
 for more informations check: [Antd](https://ant.design/)
 ### 3- Sass 
-Mainly in the App for styling, we are using Sass,
+Mainly in the App for styling, I used Sass,
 Sass stands for Syntactically Awesome Stylesheet
 Sass is an extension to CSS
 Sass is a CSS pre-processor
