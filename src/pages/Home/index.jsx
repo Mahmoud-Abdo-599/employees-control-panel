@@ -22,7 +22,8 @@ function Home() {
             day: getCurrentDate(),
             arriveTime: null,
             exitTime: null,
-            lunchBreakTimes: null
+            lunchBreakTimeStart: null,
+            lunchBreakTimeEnd: null
         }).then((response) => {
             setEmployeeData(response.data[0])
         })
