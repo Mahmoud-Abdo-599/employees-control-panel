@@ -1,0 +1,16 @@
+.auth {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 20rem;
+
+    &__header {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    &__field {
+        margin-bottom: .5rem;
+    }
+}
