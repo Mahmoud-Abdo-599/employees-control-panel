@@ -9,8 +9,8 @@ function TimeLineComponent({ data }) {
                     <p>Day: {value.day ? value.day : "Not exists"}</p>
                     <p>Arrive Time: {value.arriveTime ? value.arriveTime : "Not exists"}</p>
                     <p>Exit Time: {value.exitTime ? value.exitTime : "Not exists"}</p>
-                    <p>Lunch Break Time:
-                        {value.lunchBreakTimeStart ? value.lunchBreakTimeStart : "Not exists"} -
+                    <p>Lunch Break Time: {" "}
+                        {value.lunchBreakTimeStart ? value.lunchBreakTimeStart : "Not exists"} - {" "}
                         {value.lunchBreakTimeEnd ? value.lunchBreakTimeEnd : "Not exists"}
                     </p>
                 </Timeline.Item>
